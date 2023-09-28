@@ -109,6 +109,10 @@ export default function App() {
   }
   let [allOrder,setAllOrder]=useState([]);
   const placeOrder=()=>{
+    if(itemForOrder.length==0){
+      alert('Make a Order First')
+    }
+    else{
     let date=new Date().toISOString().split('T')[0];
     let takingTime=new Date().toLocaleTimeString();
     let placedTime=document.getElementById('min').innerHTML+':'+document.getElementById('sec').innerHTML;
@@ -119,6 +123,7 @@ export default function App() {
     setItemForOrder([]);
     resetOrder();
     setA();
+    }
   }
   const resetOrder=()=>{
     setIsAnOrder(false);
