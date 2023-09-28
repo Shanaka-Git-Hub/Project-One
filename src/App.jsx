@@ -20,16 +20,16 @@ export default function App() {
   let [a,setA]=useReducer(x=> x+1,0);
   let [isInAnOrder,setIsAnOrder]=useState(false);
   const [items, setItems] = useState([
-    { id: '001', img: a, name: 'Burger', price: '12' },
-    { id: '002', img: b, name: 'cock', price: '25' },
-    { id: '003', img: c, name: 'magdonal', price: '15' },
-    { id: '004', img: d, name: 'sandvich', price: '10' },
+    { id: '001', img: a, name: 'Burger 1', price: '12' },
+    { id: '002', img: b, name: 'Pinapple', price: '25' },
+    { id: '003', img: c, name: 'Mango', price: '15' },
+    { id: '004', img: d, name: 'Rice', price: '10' },
     { id: '005', img: e, name: 'chips', price: '35' },
-    { id: '006', img: f, name: 'banana', price: '12' },
-    { id: '007', img: g, name: 'mango', price: '32' },
-    { id: '008', img: h, name: 'rice', price: '54' },
-    { id: '009', img: i, name: 'Pinaple', price: '16' },
-    { id: '010', img: j, name: 'hotDog', price: '36' }
+    { id: '006', img: f, name: 'Chickn', price: '12' },
+    { id: '007', img: g, name: 'Burger 2', price: '32' },
+    { id: '008', img: h, name: 'Burger 3', price: '54' },
+    { id: '009', img: i, name: 'Burger 4', price: '16' },
+    { id: '010', img: j, name: 'Chikn 2', price: '36' }
   ]);
   const pickItems = (id) => {
     /*if(isInAnOrder!=true){
